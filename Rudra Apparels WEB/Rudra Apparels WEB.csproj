@@ -1,0 +1,375 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1F7B984A-9C4C-4850-BB3F-D1F88F27278B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rudra_Apparels_WEB</RootNamespace>
+    <AssemblyName>Rudra Apparels WEB</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin_catalogue.aspx" />
+    <Content Include="admin_customers.aspx" />
+    <Content Include="admin_feedback.aspx" />
+    <Content Include="admin_home.aspx" />
+    <Content Include="admin_invalid.aspx" />
+    <Content Include="admin_login.aspx" />
+    <Content Include="admin_notifications.aspx" />
+    <Content Include="admin_offers.aspx" />
+    <Content Include="admin_orders.aspx" />
+    <Content Include="admin_wishlist.aspx" />
+    <Content Include="App_Data\rudra apparels.mdf" />
+    <Content Include="App_Data\rudra apparels_log.ldf">
+      <DependentUpon>rudra apparels.mdf</DependentUpon>
+    </Content>
+    <Content Include="catalogue.aspx" />
+    <Content Include="catalogue\Chill Cheaters.jpg" />
+    <Content Include="catalogue\Summer Sleeves.jpg" />
+    <Content Include="catalogue_view_summer.aspx" />
+    <Content Include="catalogue_view_winter.aspx" />
+    <Content Include="edit_user.aspx" />
+    <Content Include="feedback_user.aspx" />
+    <Content Include="final_order.aspx" />
+    <Content Include="forgotpass.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="img_icon\admin_icon.png" />
+    <Content Include="img_icon\back_icon.png" />
+    <Content Include="img_icon\Facebook-Icon-File.png" />
+    <Content Include="img_icon\gmail_icon.png" />
+    <Content Include="img_icon\home_icon.png" />
+    <Content Include="img_icon\Instagram-icon.png" />
+    <Content Include="img_icon\Location-icon.png" />
+    <Content Include="img_icon\login_icon.png" />
+    <Content Include="img_icon\notification_icon.png" />
+    <Content Include="img_icon\signup_icon.png" />
+    <Content Include="img_icon\user_icon.png" />
+    <Content Include="img_icon\whatsapp_icon.png" />
+    <Content Include="Layout.Master" />
+    <Content Include="mail_layout.css" />
+    <Content Include="notifications.aspx" />
+    <Content Include="notification_html.html" />
+    <Content Include="offers_user.aspx" />
+    <Content Include="offer_html.html" />
+    <Content Include="order_success.html" />
+    <Content Include="wishlist_user.aspx" />
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="master.jpg" />
+    <Content Include="ordersuccess.aspx" />
+    <Content Include="payment.aspx" />
+    <Content Include="shop_cart.aspx" />
+    <Content Include="user_home.aspx" />
+    <Content Include="user_login.aspx" />
+    <Content Include="user_orderview.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin_catalogue.aspx.cs">
+      <DependentUpon>admin_catalogue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_catalogue.aspx.designer.cs">
+      <DependentUpon>admin_catalogue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_customers.aspx.cs">
+      <DependentUpon>admin_customers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_customers.aspx.designer.cs">
+      <DependentUpon>admin_customers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_feedback.aspx.cs">
+      <DependentUpon>admin_feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_feedback.aspx.designer.cs">
+      <DependentUpon>admin_feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_home.aspx.cs">
+      <DependentUpon>admin_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_home.aspx.designer.cs">
+      <DependentUpon>admin_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_invalid.aspx.cs">
+      <DependentUpon>admin_invalid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_invalid.aspx.designer.cs">
+      <DependentUpon>admin_invalid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_login.aspx.cs">
+      <DependentUpon>admin_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_login.aspx.designer.cs">
+      <DependentUpon>admin_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_notifications.aspx.cs">
+      <DependentUpon>admin_notifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_notifications.aspx.designer.cs">
+      <DependentUpon>admin_notifications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_offers.aspx.cs">
+      <DependentUpon>admin_offers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_offers.aspx.designer.cs">
+      <DependentUpon>admin_offers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_orders.aspx.cs">
+      <DependentUpon>admin_orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_orders.aspx.designer.cs">
+      <DependentUpon>admin_orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_wishlist.aspx.cs">
+      <DependentUpon>admin_wishlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_wishlist.aspx.designer.cs">
+      <DependentUpon>admin_wishlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="catalogue.aspx.cs">
+      <DependentUpon>catalogue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="catalogue.aspx.designer.cs">
+      <DependentUpon>catalogue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="catalogue_view_summer.aspx.cs">
+      <DependentUpon>catalogue_view_summer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="catalogue_view_summer.aspx.designer.cs">
+      <DependentUpon>catalogue_view_summer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="catalogue_view_winter.aspx.cs">
+      <DependentUpon>catalogue_view_winter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="catalogue_view_winter.aspx.designer.cs">
+      <DependentUpon>catalogue_view_winter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="edit_user.aspx.cs">
+      <DependentUpon>edit_user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="edit_user.aspx.designer.cs">
+      <DependentUpon>edit_user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feedback_user.aspx.cs">
+      <DependentUpon>feedback_user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feedback_user.aspx.designer.cs">
+      <DependentUpon>feedback_user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="final_order.aspx.cs">
+      <DependentUpon>final_order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="final_order.aspx.designer.cs">
+      <DependentUpon>final_order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forgotpass.aspx.cs">
+      <DependentUpon>forgotpass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forgotpass.aspx.designer.cs">
+      <DependentUpon>forgotpass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout.Master.cs">
+      <DependentUpon>Layout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout.Master.designer.cs">
+      <DependentUpon>Layout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="notifications.aspx.cs">
+      <DependentUpon>notifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="notifications.aspx.designer.cs">
+      <DependentUpon>notifications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="offers_user.aspx.cs">
+      <DependentUpon>offers_user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="offers_user.aspx.designer.cs">
+      <DependentUpon>offers_user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ordersuccess.aspx.cs">
+      <DependentUpon>ordersuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ordersuccess.aspx.designer.cs">
+      <DependentUpon>ordersuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="payment.aspx.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="payment.aspx.designer.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="shop_cart.aspx.cs">
+      <DependentUpon>shop_cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shop_cart.aspx.designer.cs">
+      <DependentUpon>shop_cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_home.aspx.cs">
+      <DependentUpon>user_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user_home.aspx.designer.cs">
+      <DependentUpon>user_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_login.aspx.cs">
+      <DependentUpon>user_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user_login.aspx.designer.cs">
+      <DependentUpon>user_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_orderview.aspx.cs">
+      <DependentUpon>user_orderview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user_orderview.aspx.designer.cs">
+      <DependentUpon>user_orderview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wishlist_user.aspx.cs">
+      <DependentUpon>wishlist_user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wishlist_user.aspx.designer.cs">
+      <DependentUpon>wishlist_user.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="catalogue\product_img\" />
+    <Folder Include="wishlist\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62394</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62394/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

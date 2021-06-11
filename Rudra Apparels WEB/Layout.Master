@@ -1,0 +1,207 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="Rudra_Apparels_WEB.Layout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+  <style>
+      body{
+          background-image: url("master.jpg");
+          background-size:cover;
+          
+         
+      }
+      .auto-style1 {
+          text-align: center;
+          color: #FFFFFF;
+      }
+      .auto-style2 {
+          font-family: "Bauhaus 93";
+          color: #FFFFFF;
+      }
+      .auto-style3 {
+          width: 100%;
+          border: 3px solid #FFFFFF;
+      }
+      .auto-style4 {          width: 902px;
+      }
+      .auto-style5 {
+          width: 823px;
+          background-color: #FF0F0F;
+          height: 329px;
+      }
+      .newStyle1 {
+          font-family: "Bauhaus 93";
+          font-size: 15px;
+          
+          font-weight: normal;
+          color: #FFFFFF;
+      }
+      .auto-style39 {
+          width: 164px;
+          text-align: center;
+          font-family: "Bookman Old Style";
+          height: 82px;
+      }
+      .auto-style66 {
+          height: 82px;
+          width: 165px;
+          text-align: center;
+      }
+      .auto-style68 {
+          height: 82px;
+          width: 165px;
+      }
+      .auto-style69 {
+          width: 165px;
+          height: 83px;
+      }
+      
+      .zoom:hover{
+           transform: scale(1.2);
+      }
+
+      .zoom{
+          transition: transform .2s;
+      }
+      .auto-style81 {
+          color: #FFFFFF;
+      }
+      .auto-style83 {
+          font-family: "Bookman Old Style";
+          color: #FFFFFF;
+      }
+      .auto-style84 {
+          font-family: "Bookman Old Style";
+          color: #FFFFFF;
+          font-size: small;
+      }
+      .auto-style89 {
+          height: 82px;
+          width: 164px;
+          text-align: center;
+      }
+      .auto-style90 {
+          width: 164px;
+          text-align: center;
+          color: #FFFFFF;
+          font-family: "Bookman Old Style";
+          height: 82px;
+      }
+      .auto-style91 {
+          height: 82px;
+          width: 164px;
+      }
+      .auto-style92 {
+          width: 164px;
+          height: 83px;
+      }
+  </style>
+
+   
+</head>
+<body>
+   
+    <form id="form1" runat="server">
+        <div>
+            <h1 class="auto-style1" style="font-size:4em">
+                <span class="auto-style2">RUDRA APPARELS</span></h1>
+            <p class="auto-style1">
+                <asp:ImageButton ID="ImageButton1" CssClass="zoom" runat="server" ImageUrl="~/img_icon/home_icon.png" ToolTip="Home" OnClick="ImageButton1_Click" />
+&nbsp;&nbsp;
+                <asp:ImageButton ID="ImageButton2" CssClass="zoom" runat="server" ImageUrl="~/img_icon/admin_icon.png" ToolTip="Admin Login" OnClick="ImageButton2_Click" />
+&nbsp;&nbsp;
+                <asp:ImageButton ID="ImageButton3" CssClass="zoom"  runat="server" ImageUrl="~/img_icon/user_icon.png" ToolTip="User Login" OnClick="ImageButton3_Click" />
+&nbsp;&nbsp;
+                <asp:ImageButton ID="ImageButton4" CssClass="zoom" runat="server" ImageUrl="~/img_icon/notification_icon.png" ToolTip="Notifications" OnClick="ImageButton4_Click" />
+&nbsp;&nbsp;
+                <asp:ImageButton ID="ImageButton5" CssClass="zoom" runat="server" ImageUrl="~/img_icon/back_icon.png" ToolTip="Catalogue" OnClick="ImageButton5_Click" />
+            </p>
+            <p class="auto-style1" style="font-size:medium; font-family: 'bauhaus 93'; background-color: #FF0F0F;">
+                &nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label1" runat="server" Text="Home" ToolTip="Click Home button above"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                <asp:Label ID="Label2" runat="server" Text="Admin Login" ToolTip="Click Admin Login button  above"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                <asp:Label ID="Label3" runat="server" Text="User Login" ToolTip="Click User Login button above"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label4" runat="server" Text="Notifications" ToolTip="Click Notification button above"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label5" runat="server" Text="Catalogue" ToolTip="Click Catalogue button above"></asp:Label>
+            </p>
+        </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        <br />
+        <table class="auto-style5" style="margin-left:auto;margin-right:auto">
+            <tr>
+                <td class="auto-style89">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br />
+                    &nbsp;<asp:ImageButton ID="ImageButton6" runat="server" ImageUrl="~/img_icon/Facebook-Icon-File.png" Width="80px" CssClass="zoom" OnClick="ImageButton6_Click" />
+                    <br />
+&nbsp;</td>
+                <td class="auto-style89">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br />
+                    &nbsp;
+                    <asp:ImageButton ID="ImageButton7" runat="server" ImageUrl="~/img_icon/Instagram-icon.png" Width="80px" CssClass="zoom" OnClick="ImageButton7_Click" />
+                    <br />
+                    <br />
+                </td>
+                <td class="auto-style89">
+                    &nbsp;&nbsp;<asp:ImageButton ID="ImageButton8" runat="server" ImageUrl="~/img_icon/Location-icon.png" Width="77px" OnClick="ImageButton8_Click" CssClass="zoom" />
+                    &nbsp;&nbsp;
+                </td>
+                <td class="auto-style89">
+                    &nbsp;
+                    <br />
+&nbsp;
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/img_icon/whatsapp_icon.png" Width="80px" CssClass="zoom" />
+                    <br />
+                    <br />
+                </td>
+                <td class="auto-style66">
+                    &nbsp;
+                    <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<asp:Image ID="Image2" runat="server" ImageUrl="~/img_icon/gmail_icon.png" Width="80px" CssClass="zoom" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <br />
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style90">Facebook</td>
+                <td class="auto-style90">Instagram</td>
+                <td class="auto-style90">Find Us !</td>
+                <td class="auto-style39"><span class="auto-style83">Leave A 
+                    <br />
+                    Message @ :</span><br class="auto-style81" />
+                    <span class="auto-style81">+91 7307883888</span></td>
+                <td class="auto-style66"><span class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="auto-style84">&nbsp;Mail Queries @:</span><br class="auto-style84" />
+                    <span class="auto-style84">rudraapparelswebsite@gmail.com</span></td>
+            </tr>
+            <tr>
+                <td class="auto-style91"></td>
+                <td class="auto-style91"></td>
+                <td class="auto-style91">
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4418.996782258647!2d75.87866739905787!3d30.934015630620774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDU2JzAxLjUiTiA3NcKwNTInNDUuNCJF!5e0!3m2!1sen!2sin!4v1524457017330" width="150" height="100" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+                </td>
+                <td class="auto-style91">&nbsp;</td>
+                <td class="auto-style68">&nbsp;</td>
+            </tr>
+            </table>
+        <table class="auto-style3">
+            <tr>
+                <td class="auto-style4" style="text-align: center; font-weight: 700; color: #FFFFFF">Copyrights Reserved @ Rudra Apparels 2018</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
